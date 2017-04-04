@@ -11,32 +11,45 @@
   <body>
     <div class="fluid-container">
       <h1 class="jumbotron">Cine Movie Magic</h1>
-      <h2>Tickets</h2>
-      <form id="form">
-        <div class="form-group">
-          <label for="age">Age</label>
-          <input id="age" type="number" min="3">
-        </div>
-        <div class="form-group">
-          <label for="time">Times</label>
-          <input id="time" type="time" name="name">
-        </div>
+      <div class="col-md-6">
+        <h2>Tickets</h2>
+        <form id="form">
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input id="age" type="number" min="3">
+          </div>
+          <div class="form-group">
+            <label for="time">Times</label>
+            <input id="time" type="time" name="name">
+          </div>
 
-        <div class="form-group">
-          <label for="radio">Now Playing</label><br />
-          <img src="img/moonlight.jpeg" alt="Moonlight" />
-          <input type="radio" name="movie" value="new-release" checked>Moonlight<br>
-          <img src="img/casablanca.jpeg" alt="Casablanca" />
-          <input type="radio" name="movie" value="oldy"> Casablanca<br>
-          <img src="img/et.jpg" alt="ET" />
-          <input type="radio" name="movie" value="oldy"> ET
-        </div>
+          <div class="form-inline">
+            <label for="radio">Now Playing</label><br />
+            <legend>!New Release!</legend>
+              <label>
+                <input type="radio" name="movie" value="new-release" checked>
+                <img src="img/moonlight.jpeg" alt="Moonlight" />
+              </label><br />
+
+              <label>
+                <input type="radio" name="movie" value="oldy">
+                <img src="img/casablanca.jpeg" alt="Casablanca" />
+              </label><br />
+              <label>
+                <input type="radio" name="movie" value="oldy">
+                <img src="img/et.jpg" alt="ET" />
+              </label><br />
+          </div>
           <br>
 
-        <button class="btn btn-lg btn-success" type="submit" name="button">Subtotal</button>
-      </form>
-      <div >
-        <ul id="receipt"> </ul>
+          <button class="btn btn-lg btn-success" type="submit" name="button">Subtotal</button>
+        </form>
+        <div >
+      </div>
+          <ul id="receipt"></ul>
+      </div>
+      <div class="col-md-6">
+
       </div>
 
     </div>

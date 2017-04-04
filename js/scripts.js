@@ -30,8 +30,6 @@ Ticket.prototype.alterPrice = function() {
 }
 
 
-
-
 // front end //
 
 $(document).ready(function() {
